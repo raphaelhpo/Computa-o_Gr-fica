@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # Carrega a imagem original
-imagem = cv2.imread("C:/Users/Raphael/Aulas_Programacao_Grafica/Computa-o_Gr-fica/Codigos_Aulas/img_com_ruido.jpeg")
+imagem = cv2.imread("./Codigos_Aulas/img_com_ruido.jpeg")
 
 # Aplica o filtro de média
 imagem_tratada = cv2.medianBlur(imagem, 5)
