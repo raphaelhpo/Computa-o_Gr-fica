@@ -1,18 +1,18 @@
-import cv2 as cv
+import cv2
 import matplotlib.pyplot as plt
-import pylab
-pylab.rcParams['figure.figsize']
 
-imagem = cv.imread('./img_com_ruidos.jpeg')
-plt.imshow(imagem)
-plt.show()
+# Carrega a imagem original
+imagem = cv2.imread("C:/Users/Raphael/Aulas_Programacao_Grafica/Computa-o_Gr-fica/Codigos_Aulas/img_com_ruido.jpeg")
 
-imagem_tratada = cv.medianBlur(imagem, 5)
+# Aplica o filtro de média
+imagem_tratada = cv2.medianBlur(imagem, 5)
 
-plt.subplot(121)
-plt.imshow(imagem_tratada)
-plt.title('Imagem tratada')
+# Cria um novo array para a imagem combinada
+imagem_combinada = cv2.hconcat([imagem, imagem_tratada])
+
+# Exibe a imagem combinada
+plt.imshow(cv2.cvtColor(imagem_combinada, cv2.COLOR_BGR2RGB))
+plt.title('Imagem original e tratada')
 plt.xticks([])
 plt.yticks([])
-
 plt.show()
