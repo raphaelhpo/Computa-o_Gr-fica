@@ -54,7 +54,7 @@ cv2.fillPoly(image, [vertices], color)
 #plt.show()
 
 #Preenchimento de Imagem com Triângulo
-caminho = 'Codigos_Aulas/Fundo_Jogo.jpg'
+caminho = './Images/Fundo_Jogo.jpg'
 foto = cv2.imread(caminho)
 
 cv2.fillPoly(foto, [vertices], color)

@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pylab
 pylab.rcParams['figure.figsize'] = (10.0, 8.0)
 
-image = cv.imread('Codigos_Aulas/Fundo_Jogo.jpg')
+image = cv.imread('./Images/Fundo_Jogo.jpg')
 
 print(image.size)
 print(image.shape)
